@@ -35,6 +35,18 @@ class RegsPage {
         cy.url().should('include', '/40.1')
         cy.wait(1000)
     }
+    click_next_regulation_arrow() {
+        cy.xpath(locators.nextArrow).click();
+        cy.wait(1000)
+        cy.url().should('include', '/40.3')
+        cy.wait(1000)
+    }
+    click_previous_regulation_arrow() {
+        cy.xpath(locators.previousArrow).click();
+        cy.wait(1000)
+        cy.url().should('include', '/40.1')
+        cy.wait(1000)
+    }
 
 }
 module.exports = new RegsPage()

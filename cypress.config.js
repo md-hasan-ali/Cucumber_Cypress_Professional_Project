@@ -38,7 +38,7 @@ async function setupNodeEvents(on, config) {
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: "https://develop.d1mvthr6zecsp4.amplifyapp.com/",
+    baseUrl: "",
     specPattern: "**/*.feature",
     setupNodeEvents,
     viewportWidth: 1300,

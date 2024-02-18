@@ -1,5 +1,5 @@
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
-const homePage = require("../../pages/RegsPage")
+const regulationPage = require("../../pages/RegsPage")
 const notePage = require("../../pages/NotesPage")
 const bookmarkPage = require("../../pages/BookmarkPage")
 const highlightPage = require("../../pages/HishlightPage")
@@ -9,24 +9,30 @@ Given("User open the eRegs page", function () {
   cy.visit("/")
 });
 When("Click on the login feature", () => {
-  homePage.loginFeature()
+  regulationPage.loginFeature()
 })
 When("Login to the eRegs website", () => {
-  homePage.login()
+  regulationPage.login()
 })
 
 // eRegs page automation
 Then("Click on the regs button and assert url", () => {
-  homePage.clickRegsBtn()
+  regulationPage.clickRegsBtn()
 })
 Then("Click on the '49_CFR_390_5T' button", () => {
-  homePage.click_49_CFR_390_5T()
+  regulationPage.click_49_CFR_390_5T()
 })
 Then("Click on the 'part_40_and_subPart_A' option", () => {
-  homePage.click_part_40_and_subPart_A()
+  regulationPage.click_part_40_and_subPart_A()
 })
 Then("Click on the 'regulation_cover' and assert endpoint and question", () => {
-  homePage.click_regulation_cover()
+  regulationPage.click_regulation_cover()
+})
+Then("Click on the 'next regulation arrow' and assert title and url", () => {
+  regulationPage.click_next_regulation_arrow()
+})
+Then("Click on the 'previous regulation arrow' and assert title and url", () => {
+  regulationPage.click_previous_regulation_arrow()
 })
 
 // Notes page automation 

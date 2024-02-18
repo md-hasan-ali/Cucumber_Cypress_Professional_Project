@@ -13,6 +13,8 @@ class Locators {
     part_40 = "//p[contains(text(),'Part 40—Procedures for Transportation Workplace Dr')]"
     subpart_A = '//p[text()="Subpart A—Administrative Provisions"]'
     regulation_cover_40_1 = '//p[text()="§ 40.1 Who does this regulation cover?"]'
+    nextArrow = "//img[@alt='next']"
+    previousArrow = "//img[@alt='previus']"
 
     // Notes Page 
     notes = "(//a[normalize-space()='Notes'])[1]"
