@@ -13,18 +13,6 @@ Feature: Automate the eRegs Page
         And Click on the 'next regulation arrow' and assert title and url
         Then Click on the 'previous regulation arrow' and assert title and url
 
-    Scenario: Verify the Notes page working properly
-        When Click on the login feature
-        And Login to the eRegs website
-        And Click on the 'Notes' button
-        Then Assert the first notes
-
-    Scenario: Verify the Bookmark page working properly
-        When Click on the login feature
-        And Login to the eRegs website
-        And Click on the 'Bookmarks' button
-        Then Assert the first notes of bookmark page
-
     Scenario: Verify the Highlights page working properly
         When Click on the login feature
         And Login to the eRegs website

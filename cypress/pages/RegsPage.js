@@ -8,9 +8,9 @@ class RegsPage {
         cy.wait(1000)
     }
     login() {
-        cy.xpath(locators.userEmailInput).type("pouqueiffeufoddeu-4860@yopmail.com")
+        cy.xpath(locators.userEmailInput).type("")
         cy.wait(500)
-        cy.xpath(locators.passwordInput).type("CSA4567$")
+        cy.xpath(locators.passwordInput).type("")
         cy.xpath(locators.loginButton).click()
         cy.wait(1000)
     }
