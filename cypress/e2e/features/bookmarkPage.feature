@@ -1,7 +1,7 @@
 Feature: Automate the eRegs Page
 
     Background:
-        Given User open the Bookmark page
+        Given User open the eRegs page
 
     Scenario: Verify the Bookmark page working properly
         When Click on the login feature

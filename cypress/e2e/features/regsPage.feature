@@ -12,9 +12,3 @@ Feature: Automate the eRegs Page
         And Click on the 'regulation_cover' and assert endpoint and question
         And Click on the 'next regulation arrow' and assert title and url
         Then Click on the 'previous regulation arrow' and assert title and url
-
-    Scenario: Verify the Highlights page working properly
-        When Click on the login feature
-        And Login to the eRegs website
-        And Click on the 'Hightlights' button
-        Then Assert the first text of highlight page

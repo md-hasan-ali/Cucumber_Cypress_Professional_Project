@@ -1,7 +1,7 @@
 Feature: Automate the eRegs Page
 
     Background:
-        Given User open the Notes page
+        Given User open the eRegs page
 
     Scenario: Verify the Notes page working properly
         When Click on the login feature
